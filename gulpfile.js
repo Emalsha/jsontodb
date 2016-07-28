@@ -19,8 +19,8 @@ gulp.task('watch', function() {
 gulp.task('develop', function () {
   livereload.listen();
   nodemon({
-    script: 'bin/www',
-    ext: 'js ejs coffee',
+    script: 'app.js',
+    ext: 'js coffee ejs',
     stdout: false
   }).on('readable', function () {
     this.stdout.on('data', function (chunk) {

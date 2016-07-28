@@ -1,0 +1,24 @@
+<% include header %>
+
+  <h1><%-title %></h1>
+  <p>Welcome to <%-title %></p>
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <p>
+          Select your json file...
+        </p>
+        <center>
+        <div>
+          <form class="form" action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="application/json" value="" required><br>
+            <input type="submit" class="btn btn-primary" style="width:200px" name="upload" value="Upload">
+          </form>
+        </div>
+      </center>
+      </div>
+    </div>
+  </div>
+
+<% include footer %>
